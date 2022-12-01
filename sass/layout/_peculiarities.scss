@@ -1,0 +1,32 @@
+.peculiarities-icon {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f4fa;
+    margin-bottom: 30px;
+}
+
+.peculiarities {
+    display: flex;
+}
+
+.peculiarities-sub-title {
+    color: var(--primary-text-color);
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.peculiarities-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.peculiarities-text {
+    color: var(--p-text-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

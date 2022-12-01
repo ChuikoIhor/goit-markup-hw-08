@@ -1,0 +1,44 @@
+.our-work {
+    text-align: center;
+}
+
+.our-work__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    vertical-align: Top;
+    letter-spacing: 0.03em;
+
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+}
+
+.our-work__list {
+    display: flex;
+    gap: 30px;
+}
+
+.our-work__item {
+    width: 370px;
+}
+
+.our-work__overlay {
+    position: relative;
+}
+
+.our-work__text {
+    color: var(--primary-white-color);
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
