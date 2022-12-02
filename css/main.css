@@ -106,6 +106,24 @@ a {
   letter-spacing: 0.03em;
   text-decoration: none;
 }
+@media screen and (min-width: 480px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.1666666667;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.1923076923;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -714,9 +732,19 @@ a {
   display: flex;
   align-items: baseline;
 }
-
+@media screen and (min-width: 480px) {
+  .footer__container {
+    display: block;
+    text-align: center;
+  }
+}
 .footer__address {
   margin-right: 93px;
+}
+@media screen and (min-width: 480px) {
+  .footer__address {
+    margin-right: 0px;
+  }
 }
 
 .logo__right-parth--white {
@@ -736,6 +764,14 @@ a {
 }
 .address__item:not(:last-child) {
   margin-bottom: 9px;
+}
+@media screen and (min-width: 480px) {
+  .address__item {
+    width: auto;
+  }
+  .address__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
 }
 
 .address__link {
@@ -757,10 +793,18 @@ a {
 .footer__social {
   margin-right: 93px;
 }
+@media screen and (min-width: 480px) {
+  .footer__social {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+}
 
 .footer__info-text {
   margin-bottom: 20px;
   color: var(--primary-white-color);
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
@@ -769,6 +813,11 @@ a {
 
 .social {
   display: flex;
+}
+@media screen and (min-width: 480px) {
+  .social {
+    justify-content: center;
+  }
 }
 
 .social__links {
@@ -795,6 +844,7 @@ a {
 .footer__subscribe-text {
   margin-bottom: 20px;
   color: var(--primary-white-color);
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
@@ -807,6 +857,11 @@ a {
 
 .footer__form {
   display: flex;
+}
+@media screen and (min-width: 480px) {
+  .footer__form {
+    display: block;
+  }
 }
 
 .footer__input {
@@ -826,6 +881,12 @@ a {
 }
 .footer__input:focus, .footer__input:hover {
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .footer__button {
@@ -847,6 +908,12 @@ a {
 }
 .footer__button:focus, .footer__button:hover {
   background-color: #188ce8;
+}
+@media screen and (min-width: 480px) {
+  .footer__button {
+    margin-left: 140px;
+    margin-right: 140px;
+  }
 }
 
 .button-icon {
