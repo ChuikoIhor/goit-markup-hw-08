@@ -36,7 +36,7 @@ p {
 ul {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -76,6 +76,24 @@ a {
 }
 .section:nth-child(4) {
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .logo {
@@ -599,13 +617,24 @@ a {
 .clients-list {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .clients-list {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-list {
+    flex-wrap: wrap;
+  }
 }
 
 .clients-links {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 30px;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -615,6 +644,21 @@ a {
 .clients-links:hover, .clients-links:focus {
   border-color: var(--accent-color);
   outline: transparent;
+}
+@media screen and (min-width: 480px) {
+  .clients-links {
+    width: 210px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-links {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-links {
+    width: 170px;
+  }
 }
 
 .clients-item:last-child {
@@ -627,6 +671,24 @@ a {
   text-align: center;
   font-weight: 700;
   font-size: 36px;
+}
+@media screen and (min-width: 480px) {
+  .clients-title {
+    font-size: 33px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .clients-icon {
