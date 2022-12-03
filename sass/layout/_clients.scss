@@ -4,13 +4,6 @@
   flex-wrap: wrap;
 }
 
-// .clients-list {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   gap: 30px;
-// }
-
 .clients-item {
   width: calc((100% - 1 * 30px) / 2);
   @include tablet {
@@ -42,23 +35,15 @@
 
 .clients-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
+  line-height: calc(33 / 28);
 
-  @media screen and(min-width: 480px) {
-    font-size: 33px;
-    margin-bottom: 30px;
-  }
-
-  @media screen and(min-width: 768px) {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
-
-  @media screen and(min-width: 1200px) {
+  @include desktop {
     font-size: 36px;
+    line-height: 42px;
     margin-bottom: 50px;
   }
 }
@@ -73,3 +58,10 @@
     fill: var(--accent-color);
   }
 }
+
+// .clients-list {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 30px;
+// }
