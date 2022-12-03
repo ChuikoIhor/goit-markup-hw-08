@@ -290,6 +290,23 @@ a {
   display: block;
 }
 
+.menu-btn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn__svg {
+  fill: #000000;
+  width: 40px;
+  height: 40px;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -309,9 +326,14 @@ a {
 }
 
 .nav__list {
-  display: flex;
-  align-items: center;
-  margin-left: 92px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+    align-items: center;
+    margin-left: 92px;
+  }
 }
 
 .nav__item:not(:last-child) {
@@ -372,9 +394,14 @@ a {
 }
 
 .contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
 }
 
 .contacts__item:not(:last-child) {
@@ -401,6 +428,10 @@ a {
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.header__menu-btn {
+  margin-left: auto;
 }
 
 .hero {
