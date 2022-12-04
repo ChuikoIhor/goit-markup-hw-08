@@ -7,6 +7,8 @@
   line-height: calc(28 / 24);
   letter-spacing: 0.03em;
   text-decoration: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   @include desktop {
     font-size: 26px;
