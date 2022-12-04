@@ -1,5 +1,6 @@
 .mobile-menu {
   position: fixed;
+  overflow: scroll;
   top: 0;
   left: 0;
   width: 100vw;
@@ -80,25 +81,24 @@
 }
 
 .mobile-menu__social__item {
-  margin-right: 20px;
+  display: flex;
+}
+
+.mobile-menu__social__item:not(:last-child):after {
+  margin-left: 10px;
+  margin-right: 10px;
+  content: '';
+  display: block;
+  width: 1px;
+  height: 22px;
+  background-color: rgba(33, 33, 33, 0.2);
 }
 
 .mobile-menu__social__link {
-  position: relative;
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  &::after {
-    content: '';
-    width: 22px;
-    height: 0px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
-    position: absolute;
-    padding-left: 4px;
-    top: 9px;
-  }
 }
