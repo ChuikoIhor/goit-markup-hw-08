@@ -21,6 +21,9 @@
   @include tablet {
     display: flex;
     align-items: center;
+    margin-left: 88px;
+  }
+  @include desktop {
     margin-left: 92px;
   }
 }
@@ -88,37 +91,61 @@
   display: none;
   @include tablet {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     margin-left: auto;
+  }
+  @include desktop {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.contacts__item {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+
+  @include desktop {
+    margin-bottom: 0;
   }
 }
 
 .contacts__item:not(:last-child) {
-  margin-right: 30px;
+  @include desktop {
+    margin-right: 30px;
+  }
 }
 
 .contacts__link {
-  display: inline-flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: var(--p-text-color);
-  text-decoration: none;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    color: var(--p-text-color);
+    text-decoration: none;
 
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  @include desktop {
+    display: inline-flex;
+    font-size: 14px;
+    line-height: calc(16 / 14);
   }
 }
 
 .contacts__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+  @include desktop {
+    margin-right: 10px;
+  }
 }
 
 .header__menu-btn {
