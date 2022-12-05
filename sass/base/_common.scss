@@ -21,7 +21,11 @@ ul {
   list-style: none;
 }
 
-img,
 a {
   display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
