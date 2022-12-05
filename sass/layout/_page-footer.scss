@@ -142,6 +142,9 @@
     margin: 0 auto;
     margin-top: 60px;
   }
+  @include desktop {
+    margin-top: 0;
+  }
 }
 
 .footer__subscribe-text {
