@@ -896,9 +896,13 @@ img {
   .our-team-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
     justify-content: center;
+    gap: 30px;
   }
+}
+
+.our-team-img {
+  margin: 0 auto;
 }
 
 .our-team-item {
@@ -906,10 +910,12 @@ img {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-white-color);
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .our-team-item {
     width: calc((100% - 60px) / 2);
+    margin: 0;
   }
 }
 @media screen and (min-width: 1200px) {
